@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin : 0;
+  padding : 0;
+  text-decoration: none;
+  border : none;
+  font-family: "Inter", sans-serif;
+  color : var(--white-color);
+  scroll-behavior: smooth;
+  
+  
+}
+
+:root{
+  --green-color : hsl(75, 94%, 57%);
+  --white-color : hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+
+}
+
+body{
+  background-color: var(--Grey-900);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height : 100vh;
+  font-size: 14px;
+  transition: all 0.30s ease
+  
+  
+}
+
+.box{
+  display:flex;
+  width: 383px;
+  height : 611px;
+  background-color : var(--Grey-800);
+  border-radius : 15px;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+.box img{
+  height : 87px;
+  width : 87px;
+  border-radius : 50%;
+  margin-top : 42px;
+  margin-bottom : 23px;
+}
+
+button {
+  height : 46px;
+  width :300px;
+  background-color : var(--Grey-700);
+  border-radius : 9px;
+  font-weight : bold;
+  margin-bottom : 13px;
+  transition: all 0.15s ease;
+   
+  
+}
+
+button:hover{
+  background-color : var(--green-color);
+  color : var(--Grey-800);
+  cursor: pointer
+  
+}
+
+.bio{
+  text-align: center;
+}
+
+.name {
+  margin-bottom : 7px;
+  font-weight : bold;
+  font-size : 24px;
+
+}
+.place{
+  color : var(--green-color);
+  margin-bottom : 31px;
+}
+
+.description {
+  margin-bottom : 23px;
+}
